@@ -1,4 +1,4 @@
-#### Student Help Hub 🎓
+# Student Help Hub 🎓
 
 ## Learn. Understand. Solve. Improve.
 
