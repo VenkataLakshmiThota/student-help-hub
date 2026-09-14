@@ -1,4 +1,4 @@
-# e-plantShopping 🎓
+# Student help hub 🎓
 
 ## Learn. Understand. Solve. Improve.
 
