@@ -1,0 +1,227 @@
+/* BASIC SETTINGS */
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+
+    background-color: #f4f7fb;
+
+    color: #222;
+}
+
+
+/* HEADER */
+
+header {
+    background-color: #2563eb;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 45px 20px;
+}
+
+
+header h1 {
+    margin: 0;
+
+    font-size: 40px;
+}
+
+
+header p {
+    font-size: 19px;
+
+    margin-top: 12px;
+}
+
+
+/* MAIN */
+
+main {
+    max-width: 850px;
+
+    margin: 35px auto;
+
+    padding: 0 20px;
+}
+
+
+/* CARDS */
+
+.card {
+    background-color: white;
+
+    padding: 30px;
+
+    margin-bottom: 25px;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 5px 18px rgba(0, 0, 0, 0.08);
+}
+
+
+.card h2 {
+    color: #1e3a8a;
+}
+
+
+/* LABELS */
+
+label {
+    display: block;
+
+    margin-top: 20px;
+
+    margin-bottom: 7px;
+
+    font-weight: bold;
+}
+
+
+/* INPUTS */
+
+select,
+textarea,
+input {
+    width: 100%;
+
+    padding: 13px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+}
+
+
+textarea {
+    height: 130px;
+
+    resize: vertical;
+}
+
+
+/* BUTTON */
+
+button {
+    background-color: #2563eb;
+
+    color: white;
+
+    border: none;
+
+    padding: 13px 22px;
+
+    margin-top: 18px;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+
+button:hover {
+    background-color: #1d4ed8;
+}
+
+
+/* HINT AND EXPLANATION */
+
+.help-box {
+    background-color: #eef4ff;
+
+    padding: 18px;
+
+    margin-top: 20px;
+
+    border-radius: 10px;
+
+    border-left: 5px solid #2563eb;
+}
+
+
+/* PRACTICE */
+
+.practice-box {
+    background-color: #f8fafc;
+
+    padding: 20px;
+
+    margin-top: 20px;
+
+    border-radius: 10px;
+}
+
+
+/* PROGRESS */
+
+.progress-box {
+    background-color: #eef4ff;
+
+    padding: 20px;
+
+    margin-top: 20px;
+
+    border-radius: 10px;
+}
+
+
+/* HIDE ELEMENT */
+
+.hidden {
+    display: none;
+}
+
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+
+    padding: 25px;
+
+    background-color: #1e293b;
+
+    color: white;
+
+    margin-top: 40px;
+}
+
+
+/* MOBILE DESIGN */
+
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 30px;
+    }
+
+
+    header p {
+        font-size: 16px;
+    }
+
+
+    .card {
+        padding: 20px;
+    }
+
+
+    button {
+        width: 100%;
+    }
+
+}

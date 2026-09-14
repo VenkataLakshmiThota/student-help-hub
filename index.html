@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Problem Solver</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>🎓 Student Problem Solver</h1>
+
+        <p>Question → Understand → Practice → Improve</p>
+    </header>
+
+
+    <!-- MAIN CONTENT -->
+    <main>
+
+        <!-- HOME SECTION -->
+        <section id="home" class="card">
+
+            <h2>Learn to Solve, Not Just Get Answers</h2>
+
+            <p>
+                Enter your academic problem and get guidance,
+                explanations, practice questions, and feedback.
+            </p>
+
+            <button onclick="showQuestionSection()">
+                Ask a Question
+            </button>
+
+        </section>
+
+
+        <!-- QUESTION SECTION -->
+        <section id="questionSection" class="card hidden">
+
+            <h2>❓ What problem are you facing?</h2>
+
+            <label for="subject">
+                Choose Subject
+            </label>
+
+            <select id="subject">
+
+                <option value="">
+                    Select Subject
+                </option>
+
+                <option value="math">
+                    Mathematics
+                </option>
+
+                <option value="statistics">
+                    Statistics
+                </option>
+
+                <option value="science">
+                    Science
+                </option>
+
+                <option value="programming">
+                    Programming
+                </option>
+
+                <option value="english">
+                    English
+                </option>
+
+                <option value="other">
+                    Other
+                </option>
+
+            </select>
+
+
+            <label for="question">
+                Enter Your Question
+            </label>
+
+            <textarea
+                id="question"
+                placeholder="Example: Solve 2x + 3 = 5">
+            </textarea>
+
+
+            <button onclick="submitQuestion()">
+                Get Help
+            </button>
+
+        </section>
+
+
+        <!-- UNDERSTAND SECTION -->
+        <section id="understandSection" class="card hidden">
+
+            <h2>🧠 Understand</h2>
+
+
+            <!-- HINT -->
+            <div class="help-box">
+
+                <h3>💡 Hint</h3>
+
+                <p id="hint">
+                    Think about what operation you should
+                    perform first.
+                </p>
+
+            </div>
+
+
+            <button onclick="showExplanation()">
+                Show Step-by-Step Explanation
+            </button>
+
+
+            <!-- EXPLANATION -->
+            <div id="explanation" class="help-box hidden">
+
+                <h3>📖 Explanation</h3>
+
+                <p id="explanationText"></p>
+
+            </div>
+
+
+            <button onclick="goToPractice()">
+                Practice a Similar Question
+            </button>
+
+        </section>
+
+
+        <!-- PRACTICE SECTION -->
+        <section id="practiceSection" class="card hidden">
+
+            <h2>✍️ Practice</h2>
+
+            <p>
+                Now try solving a similar problem yourself.
+            </p>
+
+
+            <div class="practice-box">
+
+                <h3>Practice Question</h3>
+
+                <p>
+                    Solve:
+                    <strong>3x + 2 = 11</strong>
+                </p>
+
+
+                <input
+                    type="text"
+                    id="practiceAnswer"
+                    placeholder="Enter your answer"
+                >
+
+
+                <button onclick="checkAnswer()">
+                    Check Answer
+                </button>
+
+
+                <p id="practiceResult"></p>
+
+            </div>
+
+        </section>
+
+
+        <!-- IMPROVE SECTION -->
+        <section id="improveSection" class="card hidden">
+
+            <h2>📈 Improve</h2>
+
+
+            <div class="progress-box">
+
+                <h3>Your Result</h3>
+
+                <p id="scoreText"></p>
+
+                <p>
+                    Keep practicing similar questions
+                    to improve your understanding.
+                </p>
+
+            </div>
+
+
+            <button onclick="startAgain()">
+                Solve Another Question
+            </button>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <p>
+            Student Problem Solver © 2026
+        </p>
+
+        <p>
+            Learn • Think • Solve • Grow
+        </p>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
